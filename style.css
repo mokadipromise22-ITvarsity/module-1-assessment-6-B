@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  box-shadow: #979797 0px 3px 5px;
+  background-color: dodgerblue;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav-wrapper li {
+  display: inline-block;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+.nav-wrapper li:hover {
+  color: #cecece;
+  cursor: pointer;
+}
+
+.nav-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-wrapper a:hover {
+  color: #cecece;
+  cursor: pointer;
+}
+
+.special {
+  text-align: center;
+  font-weight: lighter;
+  margin: 25px auto;
+}
+
+.container {
+  width: 90%;
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  border-bottom: dodgerblue medium solid;
+  padding: 25px 0;
+  background-color: #f7f7f7;
+}
+
+.item {
+  width: 15%;
+  border: thistle thin solid;
+  box-shadow: #cecece 0px 2px 4px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.item:hover {
+  box-shadow: #a5a4a4 0px 3px 6px;
+}
+
+.item-img:hover img {
+  transform: scale(1.1);
+}
+
+.item-description {
+  padding: 10px;
+  color: #535353;
+}
+
+.item-price h5 {
+  color: dodgerblue;
+  padding: 0 10px;
+}
+
+.item-price i {
+  font-size: 8pt;
+  text-decoration: line-through;
+  color: grey;
+  padding: 0 10px;
+}
+
+.item-buy {
+  margin: 5px auto;
+  padding: 5px;
+  width: 90%;
+  text-align: center;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+.item-buy a {
+  text-decoration: none;
+  color: white;
+}
+
+.item-buy:hover {
+  background-color: #167ee6;
+}
+
+.item-buy:active {
+  background-color: #53a6fa;
+}
+
+/* Checkout Page */
+
+.checkout {
+  background-color: #167ee6;
+  width: 100%;
+  height: 90vh;
+  background-image: url(./img/checkout.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.checkout form {
+  padding-top: 50px;
+  width: 40%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout input,
+textarea {
+  outline: none;
+  padding: 10px;
+  border: #cacaca 2px solid;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.btn {
+  margin: 5px auto;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  background-color: dodgerblue;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #167ee6;
+}
+
+.btn:active {
+  background-color: #53a6fa;
+}
+
+/* About Us */
+
+.about {
+  background-color: #167ee6;
+  width: 100%;
+  height: 90vh;
+  background-image: url(./img/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Contact */
+
+.contact {
+  background-color: #167ee6;
+  width: 100%;
+  height: 90vh;
+  background-image: url(./img/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.contact form {
+  padding-top: 50px;
+  width: 40%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+textarea {
+  outline: none;
+  padding: 10px;
+  border: #cacaca 2px solid;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+/* Item Info Page */
+
+.fill {
+  background-color: #fff;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.img {
+  width: 50%;
+  margin-left: 0;
+}
+
+.img .large-img img {
+  width: 100%;
+}
+
+.img .large-img,
+.small-img {
+  width: 80%;
+  margin: 5px auto;
+}
+
+.img .small-img img {
+  width: 20%;
+}
+
+.description {
+  width: 50%;
+}
+
+.description h4 {
+  color: #167ee6;
+}
+
+.tbl-title {
+  font-weight: bold;
+}
+
+table {
+  margin-top: 25px;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+td {
+  margin: 0;
+  padding: 5px;
+  border: #979797 thin solid;
+}
+
+.btn-buy {
+  width: 30%;
+  margin-left: 0;
+  border-radius: 5px;
+}
